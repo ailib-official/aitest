@@ -28,7 +28,7 @@ English: [README.md](./README.md)
 cargo build
 ```
 
-Windows 下仅使用 mingw 工具链时：`rustup run stable-x86_64-pc-windows-gnu cargo build`。详细构建与环境配置见 [构建说明.md](./构建说明.md)。
+Windows 下仅使用 mingw 工具链时：`rustup run stable-x86_64-pc-windows-gnu cargo build`。详细构建与环境配置见 [BUILD_WINDOWS.md](./BUILD_WINDOWS.md)。
 
 ## 配置环境
 
@@ -41,7 +41,7 @@ $env:DEEPSEEK_API_KEY = "..."
 # 可选代理示例
 $env:PROXY_URL = "http://127.0.0.1:7890"
 
-# SQLite 路径（可选；默认：sqlite://D:/ai_data/groqchat.db）
+# SQLite 路径（可选；默认：sqlite://chat.db 在当前目录）
 $env:DATABASE_URL = "sqlite:///path/to/chat.db"
 ```
 

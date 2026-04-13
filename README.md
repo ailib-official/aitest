@@ -17,7 +17,7 @@ It is intentionally simple, focusing on clarity and correctness rather than “s
 - Is: a small Axum app that streams chat completions from a **selected model** with a clean `ai-lib-rust` integration.
 - Is not: a full “smart router,” multi-provider merge, or cost optimizer. Those are easy to build on top, but omitted here to keep the example focused and auditable.
 
-For detailed Chinese build instructions (e.g. mingw), see [构建说明.md](./构建说明.md).
+For detailed Chinese build instructions (e.g. mingw), see [BUILD_WINDOWS.md](./BUILD_WINDOWS.md).
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ For detailed Chinese build instructions (e.g. mingw), see [构建说明.md](./�
 cargo build
 ```
 
-On Windows with mingw toolchain only: `rustup run stable-x86_64-pc-windows-gnu cargo build`. For detailed build and environment setup, see [构建说明.md](./构建说明.md).
+On Windows with mingw toolchain only: `rustup run stable-x86_64-pc-windows-gnu cargo build`. For detailed build and environment setup, see [BUILD_WINDOWS.md](./BUILD_WINDOWS.md).
 
 ## Configure environment
 
@@ -43,7 +43,7 @@ $env:DEEPSEEK_API_KEY = "..."
 # Optional proxy (example)
 $env:PROXY_URL = "http://127.0.0.1:7890"
 
-# SQLite path (optional; default: sqlite://D:/ai_data/groqchat.db)
+# SQLite path (optional; default: sqlite://chat.db in current directory)
 $env:DATABASE_URL = "sqlite:///path/to/chat.db"
 ```
 

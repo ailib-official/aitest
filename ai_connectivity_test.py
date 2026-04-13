@@ -28,7 +28,7 @@ import httpx
 TEST_PROMPT = "请用一句话回答：1+1等于几？"
 TIMEOUT = 30.0
 STREAM_TIMEOUT = 45.0
-SOCKS_PROXY = "socks5://192.168.2.13:8889"
+SOCKS_PROXY = os.environ.get("SOCKS_PROXY", "socks5://192.168.2.13:8889")  # 从环境变量读取，默认值
 
 # Providers that need SOCKS proxy (blocked in China)
 NEEDS_PROXY = {"OpenAI", "Google Gemini", "Cohere", "Groq"}
